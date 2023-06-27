@@ -1,0 +1,16 @@
+#Задача полиндром
+pp = str(input())
+x = len(pp)
+i = 0
+x = x - 1
+k = 0
+while x - i >= i:
+    if pp[x - i] == pp[i]:
+        i += 1
+    else:
+        k = 1
+        break
+if k == 1:
+  print("false")
+else:
+  print("true")
